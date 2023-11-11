@@ -1,0 +1,29 @@
+{
+  "name": "ebur128js",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "wasm": "wasm"
+  },
+  "devDependencies": {
+    "@types/node": "^20.1.0",
+    "audiobuffer-to-wav": "^1.0.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2",
+    "vite-plugin-dts": "^2.3.0",
+    "vite-plugin-wasm-pack": "^0.1.12"
+  },
+  "files": [
+    "/dist/*"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/loudness.d.ts",
+      "default": "./dist/index.js"
+    }
+  }
+}
